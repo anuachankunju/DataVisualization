@@ -96,3 +96,13 @@ Summary of my analysis about the top 50 player’s performance:
 *	BMI is encoded in X – axis as it was showing a clear -ve trend in my exploratory analysis.
 *	Handedness is encoded using color to see if top players are left or right both handed. There was no specific relationship proved between performance and handedness. Majority of players in original as well as the top 50 players seems to be Right handed and the color just highlights that fact.
 *	72% of the top 50 players fall in the normal BMI range. Hence if you are in normal BMI range you have high chance to be a top performer.
+
+## Resources
+* [dimple.js Documentation](http://dimplejs.org/) 
+* [Data Visualization and D3.js(Udacity)](https://www.udacity.com/course/viewer#!/c-ud507-nd)
+* [Various Stack Overflow posts:](http://stackoverflow.com/search?q=dimple.js) 
+
+## Data
+* [data/baseball_data.csv](https://github.com/anuachankunju/DataVisualization/blob/master/data/baseball_data.csv):  original downloaded dataset with calculated BMI column.
+* [data/rank50.csv](https://github.com/anuachankunju/DataVisualization/blob/master/data/rank50.csv): truncated dataset, with additional Legend & Rank columns utilized in final dimple.js implementation.
+
