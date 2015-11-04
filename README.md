@@ -1,7 +1,7 @@
 # Data Visualization: Baseball players Performance
 
 ##Summary
-This plot ranks the top 50 home run hitters from a list of over 1100 MLB players. The axes indicate the Home runs and BMI of the players and the size of each bubble represent the batting average of the player. The bubbles are colored by player’s handedness and the legend can be used to toggle between them. The plot also highlights the players who are in ideal BMI range to show how BMI relates to the performance of a player.
+This plot ranks the top 50 home run hitters from a list of over 1100 MLB players. The axes indicate the Home runs and BMI of the players. Data point are colored by player’s handedness and the legend can be used to toggle between them. The plot also highlights the players who are in ideal BMI range to show how BMI relates to the performance of a player.
 
 ##Design
 
@@ -53,7 +53,7 @@ I have showed this graph to my colleague and he gave the following comments:
 
 Highlighting the ideal BMI range in the visual will help you to draw the attention of your audience to BMI.”
 
-#######Post-feedback Design -1
+######Post-feedback Design -1
 Highlighted the Normal BMI range and added a message about it at the bottom as shown in the below image.
 ![Interview1_DesignChanges](https://github.com/anuachankunju/DataVisualization/blob/master/Images/Interview1_DesignChanges.JPG)
 
@@ -63,7 +63,7 @@ Second person who reviewed the improved graph was another Nano-degree student in
 
 Hovering over the points was interesting, but I kind of wanted to see more of animation as it makes more interactive and interesting to the viewer. One suggestion would be you can make it more interesting by making the legend clickable and interactive.”
 
-#######Post-feedback Design -2
+######Post-feedback Design -2
 I improved my visualization by making the legend clickable as advised by my friend and I felt very nice about my new design.
 ![Interview2_DesignChanges](https://github.com/anuachankunju/DataVisualization/blob/master/Images/Interview2_DesignChanges.JPG)
 
@@ -73,11 +73,13 @@ Third person with whom I reviewed my graph with was a six sigma black belt of my
 •	Giving a ranking for the players and showing it in the visual will give an idea of where an individual player stands.
 •	Removing the grid lines will give a better look for the graph as its not giving any added advantage and  mouse over draw lines to x and y axes.”
 
-#######Post-feedback Design -3
+######Post-feedback Design -3
 I tried to incorporate the suggested improvements and also changed the title of the visual to something better.  Players were ranked from 1 to 50 based on the Home Runs, rank 1 being the highest home run hitter. Here is the graph I created.
 ![Interview3_DesignChanges](https://github.com/anuachankunju/DataVisualization/blob/master/Images/FinalDesign.JPG)
 
 #####Udacity Submission 1 feedback- Highlights
+
+On first submission to Udacity I got the below feedbacks
 * Chart title is not clearly explaining the visualization.
 *	Binning the BMI data and taking summary statistics should give more insight into how BMI and performance are related to each other. 
 *	Look at the proportion of right to left handed players and see if there is any trend.
@@ -86,11 +88,11 @@ I tried to incorporate the suggested improvements and also changed the title of 
 * The README file needs to be a .md file rather than a .pdf file
 * The tooltip has some information listed more than one time. I think it will be more intuitive for the reader if the tooltip were limited to showing the most important information only once. The tooltip for the top couple of points is also getting cut off.
 
-#######Post-feedback Design -4
-Visualization was changed to incorporate the suggestions and below is the final graph I created:
+######Post-Final Design
+Visualization was changed to incorporate the suggestions from the reviewer and below is the final graph I created:
 ![FinalDesign_PostFeedback](https://github.com/anuachankunju/DataVisualization/blob/master/Images/FinalDesign_PostFeedback.JPG)
 
-Summary of my analysis about the top 50 player’s performance:
+**Summary of my analysis about the top 50 player’s performance:**
 *	Scatter plot is selected as the chart type to see the relative distribution of top players BMI range. It also helped to highlight the clustering in Normal BMI range area and to provide the details of top players using tool tip
 *	Home run is encoded in the Y – axis as I was primarily interested to analyze the performance of a player. Home run is considered as a performance measure
 *	BMI is encoded in X – axis as it was showing a clear -ve trend in my exploratory analysis.
