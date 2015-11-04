@@ -1,7 +1,7 @@
 # Data Visualization: Baseball players Performance
 
 ##Summary
-This plot ranks the top 50 home run hitters from a list of over 1100 MLB players. The axes indicate the Home runs and BMI of the players. Data point are colored by player’s handedness and the legend can be used to toggle between them. The plot also highlights the players who are in ideal BMI range to show how BMI relates to the performance of a player.
+This plot highlights the BMI range of top 50 home run hitters from a list of over 1100 MLB players. The axes indicate the Home runs and BMI of the players. Data point are colored by player’s handedness and the legend can be used to toggle between them. The plot also highlights the players who are in ideal BMI range to show how BMI relates to the performance of a player.
 
 ##Design
 
@@ -93,11 +93,11 @@ Visualization was changed to incorporate the suggestions from the reviewer and b
 ![FinalDesign_PostFeedback](https://github.com/anuachankunju/DataVisualization/blob/master/Images/FinalDesign_PostFeedback.JPG)
 
 **Summary of my analysis about the top 50 player’s performance:**
-*	Scatter plot is selected as the chart type to see the relative distribution of top players BMI range. It also helped to highlight the clustering in Normal BMI range area and to provide the details of top players using tool tip
-*	Home run is encoded in the Y – axis as I was primarily interested to analyze the performance of a player. Home run is considered as a performance measure
-*	BMI is encoded in X – axis as it was showing a clear -ve trend in my exploratory analysis.
-*	Handedness is encoded using color to see if top players are left or right both handed. There was no specific relationship proved between performance and handedness. Majority of players in original as well as the top 50 players seems to be Right handed and the color just highlights that fact.
-*	72% of the top 50 players fall in the normal BMI range. Hence if you are in normal BMI range you have high chance to be a top performer.
+**Scatter plot** is selected as the chart type to see the relative distribution of top players BMI range. It also helped to highlight the clustering in Normal BMI range area and to provide the details of top players using tool tip
+**Home run** is encoded in the **Y–axis** as I was primarily interested to analyze the performance of a player. Home run is considered as a performance measure
+**BMI** is encoded in **X–axis** as it was showing a clear -ve trend in my exploratory analysis.
+**Handedness** is encoded using **color** to see if top players are left or right both handed. There was no specific relationship proved between performance and handedness. Majority of players in original as well as the top 50 players seems to be Right handed and the color just highlights that fact.
+72% of the top 50 players fall in the normal BMI range. Hence if you are in normal BMI range you have high chance to be a top performer.
 
 ## Resources
 * [dimple.js Documentation](http://dimplejs.org/) 
