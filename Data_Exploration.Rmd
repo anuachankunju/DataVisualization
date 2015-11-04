@@ -1,0 +1,111 @@
+#Baseball players Performance Exploration By Anu Achankunju
+#========================================================
+
+## About
+This data set contains the  performance and physical aspects information of 1157 Baseball players like like height, weight and handedness of 1157 players. 
+
+```{r echo=FALSE, message=FALSE, warning=FALSE, packages}
+# Load all of the packages that you end up using
+# in your analysis in this code chunk.
+
+# Notice that the parameter "echo" was set to FALSE for this code chunk.
+# This prevents the code from displaying in the knitted HTML output.
+# You should set echo=FALSE for all code chunks in your file.
+
+library(ggplot2)
+library(dplyr)
+library(GGally)
+library(scales)
+library(memisc)
+library(reshape)
+library(gridExtra)
+```
+
+
+
+```{r echo=FALSE, warning=FALSE}
+### Load and inspect data
+setwd('C:\\Users\\320002667\\Box Sync\\NanoDegree\\M5_Make Effective Visualization\\MyProject\\data')
+player_df<-read.csv('baseball_data.csv')
+```
+
+### What is the structure of your dataset?
+Let's run some basic functions to examine the structure and schema of the data set.
+
+```{r echo=TRUE, warning=FALSE}
+dim(player_df)
+names(player_df)
+summary(player_df)
+str(player_df)
+```
+ 
+
+Some initial observations are:
+
+* There are 1577 observations of 7  variables.
+* **Name** appears to be the unique identifier.
+* **Home Runs** is a discrete variable. 
+* All other variables except Handedness seem to be continuous numeric values.
+
+
+##Exploratory Plots
+
+###Home Runs Vs Height
+```{r echo=FALSE, warning=FALSE}
+ ggplot(aes(x=Height.cm. , y=Home.Runs), data = player_df)+
+  geom_point()+
+  xlab('Height')+
+  ylab('Home Runs')+
+  ggtitle('Home Runs Vs Height')+
+  geom_smooth(color = 'red', linetype=1)
+```
+
+###Home Runs Vs Weight
+```{r echo=FALSE, warning=FALSE}
+
+ ggplot(aes(x=Weight.kg. , y=Home.Runs), data = player_df)+
+  geom_point()+
+  xlab('Weight')+
+  ylab('Home Runs')+
+  ggtitle('Home Runs Vs Weight')+
+  geom_smooth(color = 'red', linetype=1)
+
+
+```
+
+###Home Runs Vs BMI Trend
+```{r echo=FALSE, warning=FALSE}
+ggplot(aes(x=BMI , y=Home.Runs), data = player_df)+
+  xlab('BMI')+
+  ylab('Home Runs')+
+  ggtitle('Home Runs Vs BMI')+
+  geom_point()+
+  geom_smooth(color = 'red', linetype=1)
+
+bmi <- player_df[,5]
+homeruns <-player_df[,7]
+
+
+min <- min(bmi);
+max <- max(bmi);
+
+# Creo i bin
+Groups <- cut(x = bmi, breaks = seq(from = min, to = max, by = 2))
+Groups <- data.matrix(Groups, rownames.force = NA)
+
+# Raggruppo i dati nei bin
+Bygroup = tapply(homeruns, Groups, mean)
+Bygroup
+
+# Faccio il plot dei bin
+barplot(height = Bygroup, xlab = "bmi", ylab = "homeruns", main="Home Runs Vs Binned BMI")
+
+
+```
+```{r echo=FALSE, warning=FALSE}
+
+```
+
+```{r echo=FALSE, warning=FALSE}
+
+```
